@@ -31,7 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Each state's controller can be found in controllers.js
 
   $ionicConfigProvider.tabs.position('bottom');
-  
+
   $stateProvider
 
   // setup an abstract state for the tabs directive
@@ -46,9 +46,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.dash', {
     url: '/dash',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-home': {
+        templateUrl: 'templates/tab-home.html',
+        controller: 'HomeCtrl'
       }
     }
   })
@@ -56,9 +56,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.chats', {
       url: '/chats',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-shop': {
+          templateUrl: 'templates/tab-shop.html',
+          controller: 'ShopCtrl'
         }
       }
     })
@@ -66,14 +66,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.account', {
     url: '/account',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-upgrades': {
+        templateUrl: 'templates/tab-upgrades.html',
+        controller: 'UpgradesCtrl'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/home');
 
 });
