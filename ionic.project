@@ -1,0 +1,12 @@
+{
+  "name": "eSports_Clicker",
+  "app_id": "0f32ea37",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
