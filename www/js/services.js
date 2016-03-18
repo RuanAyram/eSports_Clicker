@@ -79,7 +79,22 @@ angular.module('starter.services', [])
     face: ''
   }, {
     id: 2,
-    name: 'Rampage',
+    name: 'Double Kill',
+    preco: 'Preço:',
+    face: ''
+  }, {
+    id: 3,
+    name: 'Triple Kill',
+    preco: 'Preço:',
+    face: ''
+  }, {
+    id: 4,
+    name: 'Quadra Kill',
+    preco: 'Preço:',
+    face: ''
+  }, {
+    id: 5,
+    name: 'Penta Kill',
     preco: 'Preço:',
     face: ''
   }];

@@ -9732,27 +9732,9 @@ a.button {
   transition-duration: 0s; }
 
 /*
-  Gradiente da aplicaçao
+  Scss Geral da aplicação
   =Ruan Kaylo=
 */
-/*
-  Background da aplicação
-  =Ruan Kaylo=
-*/
-.bg-App {
-  /*background:
-  radial-gradient(black 15%, transparent 16%) 0 0,
-  radial-gradient(black 15%, transparent 16%) 8px 8px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-  background-color: #808080;
-  background-size:16px 16px;*/
-  background: #800000;
-  background-image: -webkit-radial-gradient(top, circle cover, #800000 0%, #333333 80%);
-  background-image: -moz-radial-gradient(top, circle cover, #800000 0%, #333333 80%);
-  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #333333 80%);
-  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #333333 80%); }
-
 .samples div {
   color: #FFFFFF;
   font-family: "Lucida Console", Courier, monospace;
@@ -9787,3 +9769,25 @@ a.button {
   font-family: "Lucida Console", Courier, monospace;
   text-align: right;
   border: none; }
+
+/*
+  Gradiente da aplicaçao
+  =Ruan Kaylo=
+*/
+/*
+  Background da aplicação
+  =Ruan Kaylo=
+*/
+.bg-App {
+  /*background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color: #808080;
+  background-size:16px 16px;*/
+  background: #800000;
+  background-image: -webkit-radial-gradient(top, circle cover, #800000 0%, #333333 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #800000 0%, #333333 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #333333 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #333333 80%); }
