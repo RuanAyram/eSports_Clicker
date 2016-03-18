@@ -1,0 +1,15 @@
+<ion-view view-title="SHOP">
+  <ion-content class="padding bg-App has-subheader">
+    <div class="samples" ng-repeat="chat in chats">
+      <div>
+        <img ng-src="{{chat.face}}">
+        {{chat.name}}
+        <span class="badge badge-dark">{{chat.qtde}}</span>
+        <label class="item item-input item-stacked-label" id="label-shop">
+          <small>{{chat.benefits}}</small>
+        </label>
+        <button class="button button-energized">{{chat.preco}} 0</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
