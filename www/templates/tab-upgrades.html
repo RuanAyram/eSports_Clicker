@@ -1,19 +1,20 @@
 <ion-view view-title="UPGRADES" >
   <ion-content class="padding bg-App has-subheader">
-    <div class="row" ng-repeat="upgrade in upgrades">
-      <div class="col">
-        <ion-item letters-of="{{upgrade.name}}"
-                  href=""
-                  background="stable"
-                  border="2px solid black"
-                  color="dark"
-                  id="item-colUP">
-        {{upgrade.name}}
-        <span class="badge badge-dark">{{upgrade.preco}} 0</span>
-        <div class="col"><button class="button button-energized">Upgrade</button></div>
-        </ion-item>
-        <!--<div class="col"><img ng-src="{{upgrade.face}}"></div>-->
-      </div>
-    </div>
+    <ion-list>
+      <ion-item letters-of="{{upgrade.name}}"
+                href=""
+                class="item-button-right"
+                style="background-color: transparent !important"
+                ng-repeat="upgrade in upgrades"
+                background="stable"
+                border="2px solid black"
+                color="dark"
+                id="item-UP">
+                <h2>{{upgrade.name}}</h2>
+                <p>{{upgrade.preco}} 0</p>
+                <button class="button button-dark">Upgrade</button>
+      </ion-item>
+    </ion-list>
+      <!--<div class="col"><img ng-src="{{upgrade.face}}"></div>-->
   </ion-content>
 </ion-view>
