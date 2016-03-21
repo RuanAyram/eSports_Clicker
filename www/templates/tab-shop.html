@@ -1,15 +1,29 @@
 <ion-view view-title="SHOP">
   <ion-content class="padding bg-App has-subheader">
-    <div class="samples" ng-repeat="shop in shops">
-      <div>
+    <ion-list>
+      <ion-item class="item item-avatar item-button-right samples" id="item-UP"
+                style="background-color: transparent !important" ng-repeat="shop in shops">
         <img ng-src="{{shop.face}}">
-        <span class="badge badge-dark">{{shop.qtde}}</span>
-        {{shop.name}}
-        <label class="item item-input item-stacked-label" id="label-shop">
-          <small>{{shop.benefits}}</small>
-        </label>
+        <h2>
+          {{shop.name}}
+          <li>
+            {{shop.qtde}} {{shop.benefits}}
+          </li>
+        </h2>
         <button class="button button-dark">{{shop.preco}} 0</button>
-      </div>
-    </div>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>
+
+<!--<div class="samples" ng-repeat="shop in shops">
+  <div>
+    <img ng-src="{{shop.face}}">
+    <span class="badge badge-dark">{{shop.qtde}}</span>
+    {{shop.name}} {{shop.qtde}}
+    <label class="item item-input item-stacked-label" id="label-shop">
+      <small>{{shop.benefits}}</small>
+    </label>
+    <button class="button button-dark">{{shop.preco}} 0</button>
+  </div>
+</div>-->

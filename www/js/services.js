@@ -8,43 +8,43 @@ angular.module('starter.services', [])
     id: 0,
     name: 'Top',
     preco: 'Preço:',
-    qtde: 0,
+    qtde: "x" + 1,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/teleporte.png'
   }, {
     id: 1,
     name: 'Jg',
     preco: 'Preço:',
-    qtde: 0,
-    benefits: "+" +  1 + ' K$/seg',
+    qtde: "x" + 1,
+    benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/golpear.png'
   }, {
     id: 2,
     name: 'Mid',
     preco: 'Preço:',
-    qtde: 0,
-    benefits: "+" +   1 + ' K$/seg',
+    qtde: "x" + 1,
+    benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/Incendiar.png'
   }, {
     id: 3,
     name: 'Adc',
     preco: 'Preço:',
-    qtde: 0,
-    benefits: "+" +   1 + ' K$/seg',
+    qtde: "x" + 1,
+    benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/curar.png'
   }, {
     id: 4,
     name: 'Sup',
     preco: 'Preço:',
-    qtde: 0,
-    benefits: "+" +   1 + ' K$/seg',
+    qtde: "x" + 1,
+    benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/exhaust.png'
   }, {
     id: 5,
     name: 'Coach',
     preco: 'Preço:',
-    qtde: 0,
-    benefits: "+" +   1 + ' K$/seg',
+    qtde: "x" + 1,
+    benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/tecnico.png'
   }];
 

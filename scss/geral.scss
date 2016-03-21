@@ -10,7 +10,7 @@
  text-align: justify;
  font-size: 1em;
  width: 48%;
- height: 185px;
+ height: 155px;
  border: 1px solid black;
  float: left;
  margin:1px;
@@ -21,6 +21,12 @@
   height: 60px;
   border-radius: 50%;
   border: 2px solid black;
+}
+
+.button-badge{
+  display: inline-block;
+  position: relative;
+  margin-right: 130px;
 }
 
 #label-shop {
@@ -50,7 +56,8 @@
 }
 
 .item {
-  border: 1px solid black;
+  border: none;
+  //1px solid black
 }
 
 .item .item-content {
