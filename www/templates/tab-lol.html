@@ -1,0 +1,23 @@
+<ion-view view-title="League of Legends">
+  <ion-content class="padding bg-App has-subheader" scroll="false">
+    <div class="list">
+      <label class="item item-input item-select">
+        <select style="background-color: transparent !important">
+          <option selected>BR</option>
+          <option>NA</option>
+          <option>EUW</option>
+          <option>EUNE</option>
+          <option>KR</option>
+          <option>LAN</option>
+          <option>LAS</option>
+          <option>OCE</option>
+          <option>RU</option>
+          <option>TR</option>
+        </select>
+        <input type="text" placeholder="Nome de Invocador" ng-model="vm.NomeInvocador" minlength="5" maxlength="30">
+      </label>
+      <button class="button button-full button-dark" ng-click="goLolUser()" ng-disabled="!vm.NomeInvocador">Pesquisar!</button>
+      <a ui-sref="user-lol" class="button button-full button-dark">Teste =)</a>
+    </div>
+  </ion-content>
+</ion-view>

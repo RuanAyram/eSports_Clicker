@@ -8,7 +8,7 @@
  color: #FFFFFF;
  font-family: "Lucida Console", Courier, monospace;
  text-align: justify;
- font-size: 1em;
+ font-size: 12px;
  width: 48%;
  height: 155px;
  border: 1px solid black;
@@ -40,6 +40,7 @@
 #row-SH {
   width: 100%;
   height: 38px;
+  text-align: center;
   font-family: "Lucida Console", Courier, monospace;
   border: none;
 }
@@ -56,7 +57,7 @@
 }
 
 .item {
-  border: none;
+  border: 1px solid black;
   //1px solid black
 }
 

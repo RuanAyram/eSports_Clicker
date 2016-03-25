@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope) {
+.controller('HomeCtrl', function($scope, $state) {
 
   $scope.$root.data = {
     imgClicks : 0
@@ -11,17 +11,19 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('ShopCtrl', function($ionicLetterAvatarSelector, $scope, Shops) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
+.controller('ShopCtrl', function($scope, $state, Shops) {
+
   $scope.shops = Shops.all();
 })
 
-.controller('UpgradesCtrl', function($ionicLetterAvatarSelector, $scope, Upgrades) {
+.controller('UpgradesCtrl', function($ionicLetterAvatarSelector, $scope, $state, Upgrades) {
+
   $scope.upgrades = Upgrades.all();
+})
+
+.controller('LolCtrl', function($ionicLetterAvatarSelector, $scope, $state) {
+
+  $scope.goLolUser = function() {
+    $state.go('user-lol');
+  }
 });
