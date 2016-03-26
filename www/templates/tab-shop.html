@@ -1,5 +1,10 @@
-<ion-view view-title="SHOP">
-  <ion-content class="padding bg-App has-subheader">
+<ion-view view-title="">
+  <ion-content class="padding bg-App">
+    <ion-item class="text-center" style="background-color: transparent !important" id="item-UP">
+      <h2>K$/total: {{$root.data.imgClicks}}</h2>
+      <hr />
+      <p>K$/seg: {{0}}  K$/tap: {{1}}</p>
+    </ion-item>
     <ion-list>
       <ion-item class="item item-avatar item-button-right samples" id="item-UP"
                 style="background-color: transparent !important" ng-repeat="shop in shops">

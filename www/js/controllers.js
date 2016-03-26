@@ -26,4 +26,8 @@ angular.module('starter.controllers', [])
   $scope.goLolUser = function() {
     $state.go('user-lol');
   }
+
+  $scope.goHome = function() {
+    $state.go('tab.home');
+  }
 });
