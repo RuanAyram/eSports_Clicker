@@ -9744,7 +9744,6 @@ a.button {
   width: 48%;
   height: 155px;
   border: 1px solid black;
-  float: left;
   margin: 1px; }
 
 .samples img {
@@ -9752,25 +9751,6 @@ a.button {
   height: 60px;
   border-radius: 50%;
   border: 2px solid black; }
-
-.button-badge {
-  display: inline-block;
-  position: relative;
-  margin-right: 130px; }
-
-#label-shop {
-  color: #FFFFFF;
-  font-family: "Lucida Console", Courier, monospace;
-  text-align: right;
-  border: none; }
-
-/* Index-Subheader */
-#row-SH {
-  width: 100%;
-  height: 38px;
-  text-align: center;
-  font-family: "Lucida Console", Courier, monospace;
-  border: none; }
 
 /* Tela Upgrade */
 #item-UP h2 {
@@ -9786,6 +9766,28 @@ a.button {
 
 .item .item-content {
   background-color: transparent !important; }
+
+/* Modal botao config - index.html */
+.home-container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  font-family: "Lucida Console", Courier, monospace;
+  color: #FFFFFF;
+  height: 100%; }
+
+.home-container > .row {
+  display: -webkit-flex;
+  -webkit-flex: 1; }
+
+.header {
+  -webkit-flex: 2 !important;
+  -webkit-align-items: center;
+  font-family: "Lucida Console", Courier, monospace;
+  color: #FFFFFF;
+  background-color: #444; }
+
+.icon-row {
+  -webkit-align-items: center; }
 
 /*
   Gradiente da aplicaçao
