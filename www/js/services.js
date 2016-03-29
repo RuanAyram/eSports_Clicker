@@ -6,42 +6,42 @@ angular.module('starter.services', [])
   // Some fake testing data
   var shops = [{
     id: 0,
-    name: 'Top',
+    name: 'Top - ',
     preco: 'Preço:',
     qtde: "x" + 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/teleporte.png'
   }, {
     id: 1,
-    name: 'Jg',
+    name: 'Jungler - ',
     preco: 'Preço:',
     qtde: "x" + 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/golpear.png'
   }, {
     id: 2,
-    name: 'Mid',
+    name: 'Mid - ',
     preco: 'Preço:',
     qtde: "x" + 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/Incendiar.png'
   }, {
     id: 3,
-    name: 'Adc',
+    name: 'Adc - ',
     preco: 'Preço:',
     qtde: "x" + 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/curar.png'
   }, {
     id: 4,
-    name: 'Sup',
+    name: 'Suporte - ',
     preco: 'Preço:',
     qtde: "x" + 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/exhaust.png'
   }, {
     id: 5,
-    name: 'Coach',
+    name: 'Técnico - ',
     preco: 'Preço:',
     qtde: "x" + 0,
     benefits: "+" + 1 + ' K$/seg',

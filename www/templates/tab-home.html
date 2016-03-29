@@ -1,12 +1,38 @@
 <ion-view view-title="">
-  <ion-content class="padding bg-App" scroll="false" ng-click="imgClicked($event)">
+  <ion-content class="padding bg-App" scroll="false" ng-click="cookieClick(1)">
     <ion-item class="text-center" style="background-color: transparent !important" id="item-UP">
-      <h2>K$/total: {{$root.data.imgClicks}}</h2>
+      <h2>K$/total: <span id="cookies" ng-model="cookies">0</span></h2>
       <hr />
-      <p>K$/seg: {{0}}  K$/tap: {{1}}</p>
+      <p>K$/seg: 0  K$/tap: 1</p>
     </ion-item>
     <div class="item text-center" style="background-color: transparent !important">
       <img src="img/ionic.png" alt="" />
     </div>
+
+    <div class="item text-center">
+    <button class="button button-dark" ng-click="cookieClick(1)">Click Me!</button>
+    <br />
+		<h2>Cookies: <span id="cookies" ng-model="cookies">0</span>
+    <br />
+    <button class="button button-dark" ng-click="buyCursor()">Buy Cursor</button>
+		<br />
+		Cursors: <span id="cursors">0</span>
+		|+|
+		Cursor Cost: <span id="cursorCost">10</span>
+    <br />
+		<button class="button button-dark" ng-click="buyTop()">Buy Top</button>
+    <br />
+    Top: <span id="Top">0</span>
+    |+|
+		Top Cost: <span id="TopCost">10</span>
+    <br />
+		<button class="button button-dark" ng-click="buyJg()">Buy Jg</button>
+    <br />
+    Jg: <span id="Jg">0</span>
+    |+|
+		Jg Cost: <span id="JgCost">10</span></h2>
+    </div>
+
   </ion-content>
 </ion-view>
+<!-- {{$root.data.imgClicks}} style="background-color: transparent !important" -->

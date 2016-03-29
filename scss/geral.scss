@@ -5,7 +5,9 @@
 
 /* Tela Shop */
 .samples div{
+ display: -webkit-flex;
  color: #FFFFFF;
+ text-shadow: 2px 2px #333;
  font-family: "Lucida Console", Courier, monospace;
  text-align: justify;
  font-size: 12px;
@@ -16,8 +18,8 @@
 }
 
 .samples img {
-  width: 60px;
-  height: 60px;
+  width: 50px !important;
+  height: 50px !important;
   border-radius: 50%;
   border: 2px solid black;
 }
@@ -25,11 +27,13 @@
 /* Tela Upgrade */
 #item-UP h2 {
   color: #FFFFFF;
+  text-shadow: 2px 2px #333;
   font-family: "Lucida Console", Courier, monospace;
 }
 
 #item-UP p {
   color: #FFFFFF;
+  text-shadow: 2px 2px #333;
   font-family: "Lucida Console", Courier, monospace;
 }
 
@@ -48,6 +52,7 @@
      -webkit-flex-direction: column;
      font-family: "Lucida Console", Courier, monospace;
      color: #FFFFFF;
+     text-shadow: 2px 2px #333;
      height: 100%;
 }
 .home-container > .row {
@@ -55,10 +60,11 @@
      -webkit-flex: 1;
 }
 .header {
-     -webkit-flex: 2 !important;
+     -webkit-flex: 1 !important;
      -webkit-align-items: center;
      font-family: "Lucida Console", Courier, monospace;
      color: #FFFFFF;
+     text-shadow: 2px 2px #333;
      background-color: $dark;
 }
 .icon-row {

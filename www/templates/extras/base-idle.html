@@ -1,0 +1,112 @@
+<ion-view view-title="">
+  <ion-content class="padding bg-App" scroll="false" ng-click="imgClicked($event)">
+<div class="container">
+  <h1 class="page-header">Idle Game <small>- Part 1</small></h1>
+  <button type="button" id="main-btn" class="btn btn-primary btn-lg btn-block">Make some money - $1</button>
+  <br/>
+  <progress value="50" max="100" style="margin-top: 15px; margin-right: 50px; margin-left: 50px; height: 20px; width: 50px">50%</progress>
+  <div class="progress" style="margin-top: 15px;  margin-right: 50px; margin-left: 50px; height: 20px; width: 50px">
+    <div id="pbar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+  </div>
+  <p id="money-show">You have $0</p>
+  <p id="shop1">
+    <button type="button" id="buy-shop1" class="btn btn-primary">Buy this!</button>
+  <p id="label-shop1">This is awsome - $ 10</p>
+  </p>
+</div>
+<div id="cauldron">
+  <img src="http://www.clipartbest.com/cliparts/4nT/Bkr/4nTBkrbiA.png" />
+</div>
+  </ion-content>
+</ion-view>
+
+<script type="text/javascript">
+var click = 1;
+var money = 0;
+var shop1 = 10;
+var progress = 0;
+
+$('#main-btn').click(function(){
+  money+=click;
+  $('#money-show').html('You have $' + money);
+  updateProgress();
+});
+
+$('#cauldron').click(function(){
+  money+=click;
+  $('#money-show').html('You have $' + money);
+  updateProgress();
+});
+
+$('#buy-shop1').click(function(){
+  if(money>=shop1){
+    money-=shop1;
+    shop1+=2;
+    click++;
+    $('#main-btn').html('Make some money - $' + click);
+    $('#label-shop1').html('This is awsome - $' + shop1);
+     $('#money-show').html('You have $' + money);
+    updateProgress();
+  }
+});
+
+function updateProgress() {
+  progress=(money/shop1)*100;
+  progress=Math.round(progress * 100) / 100;
+  if(progress>100) progress=100;
+   $('#pbar').css('width', progress + '%').attr('aria-valuenow', progress);
+    $('#pbar').text(progress + '%')
+}
+
+window.setInterval(function () {
+  //money++;
+  updateProgress();
+  $('#money-show').html('You have $' + money);
+  $('#buy-shop1').prop('disabled', shop1 > money);
+}, 1000);
+
+/*var click = 1;
+var money = 0;
+var shop1 = 10;
+var progress = 0;
+
+$('#tela').click(function(){
+  money+=click;
+  $('#money-show').html('K$/total: ' + money);
+  updateProgress();
+})
+
+/*$('#shield').click(function(){
+  money+=click;
+  $('#money-show').html('K$/total: ' + money);
+  updateProgress();
+});
+
+$('#buy-shop1').click(function(){
+  if(money>=shop1){
+    money-=shop1;
+    shop1+=2;
+    click++;
+    //$('#tela').html('Make some money - $' + click);
+    $('#label-shop1').html('This is awsome - $' + shop1);
+    $('#money-show').html('K$/total: ' + money);
+    updateProgress();
+  }
+})
+
+function updateProgress() {
+  progress=(money/shop1)*100;
+  progress=Math.round(progress * 100) / 100;
+  /*if(progress>100) progress=100;
+   $('#pbar').css('width', progress + '%').attr('aria-valuenow', progress);
+    $('#pbar').text(progress + '%')
+}
+
+window.setInterval(function () {
+  //money++;
+  //$('#money-show').html('K$/total: ' + money);
+  $('#buy-shop1').prop('disabled', shop1 > money);
+  updateProgress();
+}, 1000);*/
+
+</script>
