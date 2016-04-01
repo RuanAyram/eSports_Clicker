@@ -58,6 +58,7 @@
 .home-container > .row {
      display: -webkit-flex;
      -webkit-flex: 1;
+     text-shadow: 2px 2px #333;
 }
 .header {
      -webkit-flex: 1 !important;
@@ -65,7 +66,7 @@
      font-family: "Lucida Console", Courier, monospace;
      color: #FFFFFF;
      text-shadow: 2px 2px #333;
-     background-color: $dark;
+     //background-color: $dark;
 }
 .icon-row {
      -webkit-align-items: center;

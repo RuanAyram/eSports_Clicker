@@ -1,9 +1,9 @@
 <ion-view view-title="">
   <ion-content class="padding bg-App">
     <ion-item class="text-center" style="background-color: transparent !important" id="item-UP">
-      <h2>K$/total: <span id="cookies" ng-model="cookies">0</span></h2>
+      <h2>K$/total: {{cookies}}</h2>
       <hr />
-      <p>K$/seg: {{0}}  K$/tap: {{1}}</p>
+      <p>K$/seg: {{top + clickers}}  K$/tap: 1</p>
     </ion-item>
     <ion-list>
       <ion-item class="item item-avatar item-button-right samples" id="item-UP"
@@ -12,7 +12,7 @@
         <h2>
           {{shop.name}}{{shop.qtde}}
           <li>
-             {{shop.preco}} 0
+             <p>{{shop.preco}} 0</p>
           </li>
         </h2>
         <button class="button button-dark">Contratar!</button>

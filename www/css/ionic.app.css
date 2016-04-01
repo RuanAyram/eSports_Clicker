@@ -9782,15 +9782,15 @@ a.button {
 
 .home-container > .row {
   display: -webkit-flex;
-  -webkit-flex: 1; }
+  -webkit-flex: 1;
+  text-shadow: 2px 2px #333; }
 
 .header {
   -webkit-flex: 1 !important;
   -webkit-align-items: center;
   font-family: "Lucida Console", Courier, monospace;
   color: #FFFFFF;
-  text-shadow: 2px 2px #333;
-  background-color: #444; }
+  text-shadow: 2px 2px #333; }
 
 .icon-row {
   -webkit-align-items: center; }
