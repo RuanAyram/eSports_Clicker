@@ -6,44 +6,44 @@ angular.module('starter.services', [])
   // Some fake testing data
   var shops = [{
     id: 0,
-    name: 'Top - ',
-    preco: 'Preço:',
-    qtde: "x" + 0,
+    name: 'Top',
+    preco: 0,
+    qtde: 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/teleporte.png'
   }, {
     id: 1,
-    name: 'Jungler - ',
-    preco: 'Preço:',
-    qtde: "x" + 0,
+    name: 'Jungler',
+    preco: 0,
+    qtde: 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/golpear.png'
   }, {
     id: 2,
-    name: 'Mid - ',
-    preco: 'Preço:',
-    qtde: "x" + 0,
+    name: 'Mid',
+    preco: 0,
+    qtde: 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/Incendiar.png'
   }, {
     id: 3,
-    name: 'Adc - ',
-    preco: 'Preço:',
-    qtde: "x" + 0,
+    name: 'Adc',
+    preco: 0,
+    qtde: 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/curar.png'
   }, {
     id: 4,
-    name: 'Suporte - ',
-    preco: 'Preço:',
-    qtde: "x" + 0,
+    name: 'Suporte',
+    preco: 0,
+    qtde: 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/exhaust.png'
   }, {
     id: 5,
-    name: 'Técnico - ',
-    preco: 'Preço:',
-    qtde: "x" + 0,
+    name: 'Técnico',
+    preco: 0,
+    qtde: 0,
     benefits: "+" + 1 + ' K$/seg',
     face: 'img/Img_roles/tecnico.png'
   }];
@@ -70,32 +70,32 @@ angular.module('starter.services', [])
   var upgrades = [{
     id: 0,
     name: 'Streamer',
-    preco: 'Preço:',
+    preco: 0,
     face: 'img/Img_roles/streamer.png'
   }, {
     id: 1,
     name: 'Killing Spree',
-    preco: 'Preço:',
+    preco: 0,
     face: ''
   }, {
     id: 2,
     name: 'Double Kill',
-    preco: 'Preço:',
+    preco: 0,
     face: ''
   }, {
     id: 3,
     name: 'Triple Kill',
-    preco: 'Preço:',
+    preco: 0,
     face: ''
   }, {
     id: 4,
     name: 'Quadra Kill',
-    preco: 'Preço:',
+    preco: 0,
     face: ''
   }, {
     id: 5,
     name: 'Penta Kill',
-    preco: 'Preço:',
+    preco: 0,
     face: ''
   }];
 

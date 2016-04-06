@@ -10,9 +10,9 @@
                 style="background-color: transparent !important" ng-repeat="shop in shops">
         <img ng-src="{{shop.face}}">
         <h2>
-          {{shop.name}}{{shop.qtde}}
+          {{shop.name}} <i class="icon ion-more"></i> x{{shop.qtde}}
           <li>
-             <p>{{shop.preco}} 0</p>
+             <p>Preço: {{shop.preco}}</p>
           </li>
         </h2>
         <button class="button button-dark">Contratar!</button>
