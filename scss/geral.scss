@@ -24,6 +24,14 @@
   border: 2px solid black;
 }
 
+.item.item-button-right .badge {
+  position:initial !important;
+  display: inline !important;
+  top: initial !important;
+  right: initial !important;
+  font-size: 14px;
+}
+
 /* Tela Upgrade */
 #item-UP h2 {
   color: #FFFFFF;

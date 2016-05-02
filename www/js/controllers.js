@@ -66,9 +66,20 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ShopCtrl', function($scope, $state, Shops) {
+.controller('ShopCtrl', function($scope, $state, $ionicPopup, Shops) {
 
   $scope.shops = Shops.all();
+
+  // An alert dialog
+  $scope.alertShop = function() {
+    var alertPopup = $ionicPopup.alert({
+      title: 'Beneficios Shop',
+      scope: $scope,
+      template: '<ion-item class="item" id="item-UP"' +
+                'style="background-color: #252233 !important" ng-repeat="shop in shops">' +
+                '<h2>{{shop.name}}: {{shop.benefits}}</h2></ion-item>'
+    });
+  };
 })
 
 .controller('UpgradesCtrl', function($ionicLetterAvatarSelector, $scope, $state, Upgrades) {
