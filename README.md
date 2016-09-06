@@ -15,4 +15,6 @@ Autor: Ruan Kaylo
 
 ** ionic build android|ios
 
-** ionic serve
+** ionic run (Instala a aplicação no device da plataforma escolhida)
+
+** ionic serve (Teste Local)
