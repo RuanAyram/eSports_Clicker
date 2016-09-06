@@ -1,51 +1,17 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope, $state, $ionicModal, $document, $interval) {
+.controller('HomeCtrl', function($scope, $state, $ionicModal, $interval, $rootScope, $document) {
 
-  $scope.cookies = 0;
-  $scope.clickers = 0;
-	$scope.top = 0;
+  $rootScope.cookies = 0;
 
-  $scope.click = function() {
-    $scope.cookies++;
+  $rootScope.click = function() {
+    $rootScope.cookies++;
   }
-
-  $scope.clickerPrice = function(){
-    return (10 * Math.pow(1.1,$scope.clickers)).toFixed();
-  }
-
-	$scope.topPrice = function(){
-    return (11 * Math.pow(1.1,$scope.top)).toFixed();
-  }
-
-  $scope.buyClicker = function() {
-    if ($scope.cookies >= $scope.clickerPrice()) {
-        $scope.cookies -= $scope.clickerPrice();
-        $scope.clickers++;
-    }
-  }
-
-  $scope.buyTop = function() {
-    if ($scope.cookies >= $scope.topPrice()){
-		    $scope.cookies -= $scope.topPrice();
-		    $scope.top++;
-		}
-  }
-
-  function update() {
-    $scope.cookies += $scope.clickers;
-		$scope.cookies += $scope.top;
-  };
-
-  $document.ready(function(){
-    $interval(update,1000);
-  });
 
   /*click na Tab Home
   $scope.$root.data = {
     imgClicks : 0
   };
-
   $scope.imgClicked = function(event) {
     $scope.data.imgClicks++;
   };*/
@@ -66,9 +32,99 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ShopCtrl', function($scope, $state, $ionicPopup, Shops) {
+.controller('ShopCtrl', function($scope, $state, $ionicPopup, $document, $rootScope, $interval, Shops) {
 
   $scope.shops = Shops.all();
+
+  $rootScope.top = 0;
+  $rootScope.jungler = 0;
+  $rootScope.mid = 0;
+  $rootScope.adc = 0;
+  $rootScope.suporte = 0;
+  $rootScope.tecnico = 0;
+
+  $rootScope.topPrice = function(){
+    return (10 * Math.pow(1.1,$rootScope.top)).toFixed();
+  }
+
+  $rootScope.junglerPrice = function(){
+    return (11 * Math.pow(1.1,$rootScope.jungler)).toFixed();
+  }
+
+  $rootScope.midPrice = function(){
+    return (12 * Math.pow(1.1,$rootScope.mid)).toFixed();
+  }
+
+  $rootScope.adcPrice = function(){
+    return (13 * Math.pow(1.1,$rootScope.adc)).toFixed();
+  }
+
+  $rootScope.suportePrice = function(){
+    return (14 * Math.pow(1.1,$rootScope.suporte)).toFixed();
+  }
+
+  $rootScope.tecnicoPrice = function(){
+    return (15 * Math.pow(1.1,$rootScope.tecnico)).toFixed();
+  }
+
+  $rootScope.buyTop = function() {
+    if ($rootScope.cookies >= $rootScope.topPrice()){
+        $rootScope.cookies -= $rootScope.topPrice();
+        $rootScope.top++;
+    }
+  }
+
+  $rootScope.buyJungler = function() {
+    if ($rootScope.cookies >= $rootScope.junglerPrice()) {
+        $rootScope.cookies -= $rootScope.junglerPrice();
+        $rootScope.jungler++;
+    }
+  }
+
+  $rootScope.buyMid = function() {
+    if ($rootScope.cookies >= $rootScope.midPrice()){
+        $rootScope.cookies -= $rootScope.midPrice();
+        $rootScope.mid++;
+    }
+  }
+
+  $rootScope.buyAdc = function() {
+    if ($rootScope.cookies >= $rootScope.adcPrice()){
+        $rootScope.cookies -= $rootScope.adcPrice();
+        $rootScope.adc++;
+    }
+  }
+
+  $rootScope.buySuporte = function() {
+    if ($rootScope.cookies >= $rootScope.suportePrice()){
+        $rootScope.cookies -= $rootScope.suportePrice();
+        $rootScope.suporte++;
+    }
+  }
+
+  $rootScope.buyTecnico = function() {
+    if ($rootScope.cookies >= $rootScope.tecnicoPrice()){
+        $rootScope.cookies -= $rootScope.tecnicoPrice();
+        $rootScope.tecnico++;
+    }
+  }
+
+  function update() {
+    $rootScope.cookies += $rootScope.top;
+    $rootScope.cookies += $rootScope.jungler;
+    $rootScope.cookies += $rootScope.mid;
+    $rootScope.cookies += $rootScope.adc;
+    $rootScope.cookies += $rootScope.suporte;
+    $rootScope.cookies += $rootScope.tecnico;
+  };
+
+  $rootScope.somarTodos = function(){
+    return $rootScope.top + $rootScope.jungler + $rootScope.mid + $rootScope.adc + $rootScope.suporte + $rootScope.tecnico;
+  }
+
+  $document.ready(function(){
+    $interval(update,1000);
+  });
 
   // An alert dialog
   $scope.alertShop = function() {
@@ -82,9 +138,10 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('UpgradesCtrl', function($ionicLetterAvatarSelector, $scope, $state, Upgrades) {
+.controller('UpgradesCtrl', function($ionicLetterAvatarSelector, $scope, $state, $rootScope, Upgrades) {
 
   $scope.upgrades = Upgrades.all();
+
 })
 
 .controller('LolCtrl', function($ionicLetterAvatarSelector, $scope, $state) {
@@ -96,4 +153,5 @@ angular.module('starter.controllers', [])
   $scope.goHome = function() {
     $state.go('tab.home');
   }
+
 });
