@@ -1,11 +1,24 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope, $state, $ionicModal, $interval, $rootScope, $document) {
+.controller('HomeCtrl', function($scope, $state, $ionicModal, $ionicPopup, $interval, $rootScope, $document) {
 
   $rootScope.cookies = 0;
 
   $rootScope.click = function() {
     $rootScope.cookies++;
+
+    // An alert dialog
+    if ($rootScope.cookies == 10) {
+        var alertPopup = $ionicPopup.alert({
+          title: '',
+          scope: $scope,
+          template: '<ul class="list text-center">' +
+                      '<li class="item">' +
+                        'Consulte a aba Shop' +
+                      '</li>' +
+                    '</ul>'
+        });
+    } 
   }
 
   /*click na Tab Home
@@ -141,6 +154,8 @@ angular.module('starter.controllers', [])
 .controller('UpgradesCtrl', function($ionicLetterAvatarSelector, $scope, $state, $rootScope, Upgrades) {
 
   $scope.upgrades = Upgrades.all();
+
+  $scope.upgrades.preco = 0;
 
 })
 
