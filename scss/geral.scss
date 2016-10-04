@@ -45,8 +45,15 @@
   font-family: "Lucida Console", Courier, monospace;
 }
 
+#item-UP small {
+  color: #FFFFFF;
+  text-shadow: 2px 2px #333;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
 .item {
   border: none;
+  margin-top: -14px;
   //1px solid black
 }
 

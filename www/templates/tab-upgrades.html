@@ -1,9 +1,9 @@
 <ion-view view-title="">
   <ion-content class="padding bg-App">
     <ion-item class="text-center" style="background-color: transparent !important" id="item-UP">
-      <h2>K$/total: {{cookies | number:1}}</h2>
+      <p><small>K$/total: {{cookies | number:1}}</small></p>
+      <p><small>K$/seg: {{somarTodos() | number:1}}  K$/tap: {{1 | number:1}}</small></p>
       <hr />
-      <p>K$/seg: {{somarTodos() | number:1}}  K$/tap: {{1 | number:1}}</p>
     </ion-item>
     <ion-list>
       <ion-item letters-of="{{upgrade.name}}"

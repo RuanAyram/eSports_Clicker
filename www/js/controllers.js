@@ -160,20 +160,19 @@ angular.module('starter.controllers', [])
 })
 
 .controller('LolCtrl', function($ionicLetterAvatarSelector, $scope, $state, $http) {
-
   $scope.result = "";
   $http.get('https://br.api.pvp.net/api/lol/br/v1.4/summoner/by-name/RuanAyram?api_key=03266ce9-2dcc-4caa-9404-ed4d8fa9a093')
     .success(function(data, status, headers,config){
       console.log('data success');
       console.log(data); // for browser console
       $scope.result = data; // for UI
-    })
-    .error(function(data, status, headers,config){
-      console.log('data error');
-    })
-    .then(function(result){
-      things = result.data;
-    })
+   })
+   .error(function(data, status, headers,config){
+    console.log('data error');
+   })
+   .then(function(result){
+    things = result.data;
+   })
 
   $scope.goLolUser = function() {
     $state.go('user-lol');
