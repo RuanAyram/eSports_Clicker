@@ -9,8 +9,6 @@ Autor: Ruan Kaylo
 
 ** ionic setup sass
 
-** bower install ionic-letter-avatar-selector
-
 ** ionic platform add android|ios
 
 ** ionic build android|ios
