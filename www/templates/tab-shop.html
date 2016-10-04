@@ -12,67 +12,73 @@
                 style="background-color: transparent !important">
         <img ng-src="img/Img_roles/teleporte.png">
         <h2>
-          Top: <i class="icon ion-more"></i> <span class="badge badge-dark">x{{top | number:1}}</span>
+          Top <i class="icon ion-more"></i> <span class="badge badge-dark">x{{top | number:1}}</span>
           <li>
              <p>Preço: {{topPrice() | number:1}}</p>
           </li>
         </h2>
-        <button class="button button-small button-dark" ng-click="buyTop()" ng-disabled="cookies < topPrice()">Contratar!</button>
+        <button class="button button-dark icon ion-checkmark-circled" ng-click="buyTop()"
+                ng-disabled="cookies < topPrice()"></button>
       </ion-item>
       <ion-item class="item item-avatar item-button-right samples" id="item-UP"
                 style="background-color: transparent !important">
         <img ng-src="img/Img_roles/golpear.png">
         <h2>
-          Jungler: <i class="icon ion-more"></i> <span class="badge badge-dark">x{{jungler | number:1}}</span>
+          Jungler <i class="icon ion-more"></i> <span class="badge badge-dark">x{{jungler | number:1}}</span>
           <li>
              <p>Preço: {{junglerPrice() | number:1}}</p>
           </li>
         </h2>
-        <button class="button button-small button-dark" ng-click="buyJungler()" ng-disabled="cookies < junglerPrice()">Contratar!</button>
+        <button class="button button-dark icon ion-checkmark-circled" ng-click="buyJungler()"
+                ng-disabled="cookies < junglerPrice()"></button>
       </ion-item>
       <ion-item class="item item-avatar item-button-right samples" id="item-UP"
                 style="background-color: transparent !important">
         <img ng-src="img/Img_roles/Incendiar.png">
         <h2>
-          Mid: <i class="icon ion-more"></i> <span class="badge badge-dark">x{{mid | number:1}}</span>
+          Mid <i class="icon ion-more"></i> <span class="badge badge-dark">x{{mid | number:1}}</span>
           <li>
              <p>Preço: {{midPrice() | number:1}}</p>
           </li>
         </h2>
-        <button class="button button-small button-dark" ng-click="buyMid()" ng-disabled="cookies < midPrice()">Contratar!</button>
+        <button class="button button-dark icon ion-checkmark-circled" ng-click="buyMid()" 
+                ng-disabled="cookies < midPrice()"></button>
       </ion-item>
       <ion-item class="item item-avatar item-button-right samples" id="item-UP"
                 style="background-color: transparent !important">
         <img ng-src="img/Img_roles/curar.png">
         <h2>
-          Adc: <i class="icon ion-more"></i> <span class="badge badge-dark">x{{adc | number:1}}</span>
+          Adc <i class="icon ion-more"></i> <span class="badge badge-dark">x{{adc | number:1}}</span>
           <li>
              <p>Preço: {{adcPrice() | number:1}}</p>
           </li>
         </h2>
-        <button class="button button-small button-dark" ng-click="buyAdc()" ng-disabled="cookies < adcPrice()">Contratar!</button>
+        <button class="button button-dark icon ion-checkmark-circled" ng-click="buyAdc()" 
+                ng-disabled="cookies < adcPrice()"></button>
       </ion-item>
       <ion-item class="item item-avatar item-button-right samples" id="item-UP"
                 style="background-color: transparent !important">
         <img ng-src="img/Img_roles/exhaust.png">
         <h2>
-          Suporte: <i class="icon ion-more"></i> <span class="badge badge-dark">x{{suporte | number:1}}</span>
+          Suporte <i class="icon ion-more"></i> <span class="badge badge-dark">x{{suporte | number:1}}</span>
           <li>
              <p>Preço: {{suportePrice() | number:1}}</p>
           </li>
         </h2>
-        <button class="button button-small button-dark" ng-click="buySuporte()" ng-disabled="cookies < suportePrice()">Contratar!</button>
+        <button class="button button-dark icon ion-checkmark-circled" ng-click="buySuporte()" 
+                ng-disabled="cookies < suportePrice()"></button>
       </ion-item>
       <ion-item class="item item-avatar item-button-right samples" id="item-UP"
                 style="background-color: transparent !important">
         <img ng-src="img/Img_roles/tecnico.png">
         <h2>
-          Tecnico: <i class="icon ion-more"></i> <span class="badge badge-dark">x{{tecnico | number:1}}</span>
+          Tecnico <i class="icon ion-more"></i> <span class="badge badge-dark">x{{tecnico | number:1}}</span>
           <li>
              <p>Preço: {{tecnicoPrice() | number:1}}</p>
           </li>
         </h2>
-        <button class="button button-small button-dark" ng-click="buyTecnico()" ng-disabled="cookies < tecnicoPrice()">Contratar!</button>
+        <button class="button button-dark icon ion-checkmark-circled" ng-click="buyTecnico()" 
+                ng-disabled="cookies < tecnicoPrice()"></button>
       </ion-item>
     </ion-list>
 
